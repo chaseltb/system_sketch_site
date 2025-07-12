@@ -9,14 +9,14 @@ export function setupFAQ() {
             <i class="ph ph-question"></i>
             Common questions
           </div>
-          <h2 class="section-title">Everything you need to know</h2>
+          <h2 id="faq-title" class="section-title">Everything you need to know</h2>
           <p class="section-subtitle">
             Quick answers to questions you might have about SystemSketch and how it works.
           </p>
         </div>
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false">
               What technologies does SystemSketch support?
               <i class="ph ph-chevron-down faq-chevron"></i>
             </button>
@@ -25,7 +25,7 @@ export function setupFAQ() {
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false">
               How production-ready is the generated code?
               <i class="ph ph-chevron-down faq-chevron"></i>
             </button>
@@ -34,7 +34,7 @@ export function setupFAQ() {
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false">
               Can I customize the generated code structure?
               <i class="ph ph-chevron-down faq-chevron"></i>
             </button>
@@ -43,7 +43,7 @@ export function setupFAQ() {
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false">
               Do I need design or architecture experience?
               <i class="ph ph-chevron-down faq-chevron"></i>
             </button>
@@ -52,7 +52,7 @@ export function setupFAQ() {
             </div>
           </div>
           <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" aria-expanded="false">
               How does team collaboration work?
               <i class="ph ph-chevron-down faq-chevron"></i>
             </button>
@@ -77,11 +77,15 @@ export function setupFAQ() {
       // Close all other items
       faqItems.forEach(otherItem => {
         otherItem.classList.remove('active')
+        otherItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false')
       })
       
       // Toggle current item
       if (!isActive) {
         item.classList.add('active')
+        question.setAttribute('aria-expanded', 'true')
+      } else {
+        question.setAttribute('aria-expanded', 'false')
       }
     })
   })

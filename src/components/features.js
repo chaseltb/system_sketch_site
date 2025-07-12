@@ -9,13 +9,16 @@ export function setupFeatures() {
             <i class="ph ph-lightning"></i>
             Core capabilities
           </div>
-          <h2 class="section-title">Everything you need to go from idea to implementation</h2>
+          <h2 id="features-title" class="section-title">Everything you need to go from idea to implementation</h2>
           <p class="section-subtitle">
             Stop wrestling with boilerplate code and focus on building what matters. SystemSketch handles the heavy lifting.
           </p>
         </div>
         <div class="features-grid">
           <div class="feature-card">
+            <div class="feature-section-icon">
+              <i class="ph ph-palette"></i>
+            </div>
             <div class="feature-icon">
               <i class="ph ph-selection-all"></i>
             </div>
@@ -31,6 +34,9 @@ export function setupFeatures() {
             </ul>
           </div>
           <div class="feature-card">
+            <div class="feature-section-icon">
+              <i class="ph ph-code"></i>
+            </div>
             <div class="feature-icon">
               <i class="ph ph-file-code"></i>
             </div>
@@ -46,6 +52,9 @@ export function setupFeatures() {
             </ul>
           </div>
           <div class="feature-card">
+            <div class="feature-section-icon">
+              <i class="ph ph-stack"></i>
+            </div>
             <div class="feature-icon">
               <i class="ph ph-stack-simple"></i>
             </div>
@@ -61,6 +70,9 @@ export function setupFeatures() {
             </ul>
           </div>
           <div class="feature-card">
+            <div class="feature-section-icon">
+              <i class="ph ph-users"></i>
+            </div>
             <div class="feature-icon">
               <i class="ph ph-users-four"></i>
             </div>

@@ -247,108 +247,6 @@ nav {
 }
 
 /* Technology Carousel Section */
-#tech-carousel {
-  padding: 60px 0;
-  background: var(--bg-primary);
-  border-bottom: 1px solid var(--border-light);
-}
-
-.tech-text {
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.tech-carousel-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.tech-carousel {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  animation: scroll 30s linear infinite;
-  width: fit-content;
-}
-
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  min-width: 80px;
-  opacity: 0.6;
-  transition: all 0.3s ease;
-}
-
-.tech-item:hover {
-  opacity: 1;
-  transform: translateY(-2px);
-}
-
-.tech-logo {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-}
-
-.tech-logo svg {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease;
-}
-
-.tech-item:hover .tech-logo svg {
-  transform: scale(1.1);
-}
-
-.tech-name {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--text-muted);
-  text-align: center;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.tech-carousel-container::before,
-.tech-carousel-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.tech-carousel-container::before {
-  left: 0;
-  background: linear-gradient(90deg, var(--bg-primary) 0%, transparent 100%);
-}
-
-.tech-carousel-container::after {
-  right: 0;
-  background: linear-gradient(270deg, var(--bg-primary) 0%, transparent 100%);
-}
-
 /* Features Section */
 .features {
   padding: 100px 0;
@@ -465,6 +363,26 @@ nav {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.feature-section-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 20px;
+  opacity: 0.3;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover .feature-section-icon {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
 .feature-card:hover .feature-icon {
   transform: scale(1.1);
 }
@@ -527,6 +445,26 @@ nav {
   position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
+}
+
+.process-section-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 20px;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.process-card:hover .process-section-icon {
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .process-card::before {
@@ -622,6 +560,26 @@ nav {
   position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
+}
+
+.testimonial-section-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 20px;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-section-icon {
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .testimonial-card::before {
@@ -950,4 +908,53 @@ footer {
 
 .mb-8 {
   margin-bottom: 32px;
+}
+
+/* Performance optimizations */
+.feature-card,
+.process-card,
+.testimonial-card {
+  will-change: transform;
+}
+
+.feature-icon,
+.process-icon,
+.feature-section-icon,
+.process-section-icon,
+.testimonial-section-icon {
+  will-change: transform;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for better accessibility */
+.btn:focus,
+.nav-links a:focus,
+.faq-question:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Skip link for screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 6px;
 }

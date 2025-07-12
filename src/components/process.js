@@ -9,13 +9,16 @@ export function setupProcess() {
             <i class="ph ph-path"></i>
             Simple process
           </div>
-          <h2 class="section-title">From architecture to code in 3 steps</h2>
+          <h2 id="process-title" class="section-title">From architecture to code in 3 steps</h2>
           <p class="section-subtitle">
             Our streamlined workflow gets you from system design to running code faster than traditional development approaches.
           </p>
         </div>
         <div class="process-flow">
           <div class="process-card">
+            <div class="process-section-icon">
+              <i class="ph ph-pencil-simple"></i>
+            </div>
             <div class="process-icon">
               <i class="ph ph-cursor-click"></i>
             </div>
@@ -33,6 +36,9 @@ export function setupProcess() {
           </div>
           
           <div class="process-card">
+            <div class="process-section-icon">
+              <i class="ph ph-sliders"></i>
+            </div>
             <div class="process-icon">
               <i class="ph ph-gear"></i>
             </div>
@@ -50,6 +56,9 @@ export function setupProcess() {
           </div>
           
           <div class="process-card">
+            <div class="process-section-icon">
+              <i class="ph ph-download"></i>
+            </div>
             <div class="process-icon">
               <i class="ph ph-rocket-launch"></i>
             </div>
