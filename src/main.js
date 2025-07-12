@@ -170,3 +170,4 @@ document.querySelector('#footer').innerHTML = `
       <p>&copy; 2025 SystemSketch. All rights reserved.</p>
     </div>
   </div>
+`
