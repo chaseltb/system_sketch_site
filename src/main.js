@@ -128,15 +128,12 @@ document.querySelector('#tech-carousel').innerHTML = `
             </svg>
           </div>
           <div class="tech-name">Kubernetes</div>
-          </div>
-          <div class="tech-name">Azure</div>
         </div>
-        <div class="tech-item" data-tech="gcp">
-          <div class="tech-logo">
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12.19 2.38a9.344 9.344 0 016.695 2.774 9.344 9.344 0 012.774 6.695 9.344 9.344 0 01-2.774 6.695 9.344 9.344 0 01-6.695 2.774 9.344 9.344 0 01-6.695-2.774A9.344 9.344 0 012.72 11.849a9.344 9.344 0 012.774-6.695A9.344 9.344 0 0112.19 2.38z" fill="#4285F4"/>
-              <path d="M16.855 7.964l-1.027 1.027a3.732 3.732 0 00-1.027-1.027l1.027-1.027a5.598 5.598 0 011.027 1.027z" fill="#34A853"/>
-              <path d="M7.335 16.484l1.027-1.027a3.732 3.732 0 001.027 1.027l-1.027 1.027a5.598 5.598 0 01-1.027-1.027z" fill="#FBBC04"/>
+      </div>
+    </div>
+  </div>
+`;
+
 // Setup footer
 document.querySelector('#footer').innerHTML = `
   <div class="container">
@@ -170,4 +167,3 @@ document.querySelector('#footer').innerHTML = `
       <p>&copy; 2025 SystemSketch. All rights reserved.</p>
     </div>
   </div>
-`
