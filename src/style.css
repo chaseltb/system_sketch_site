@@ -293,15 +293,23 @@ nav {
   transform: translateY(-2px);
 }
 
-.tech-icon {
+.tech-logo {
   width: 48px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
-  color: var(--text-secondary);
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.tech-logo svg {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.tech-item:hover .tech-logo svg {
+  transform: scale(1.1);
 }
 
 .tech-name {
@@ -310,22 +318,6 @@ nav {
   color: var(--text-muted);
   text-align: center;
 }
-
-/* Technology specific colors */
-.tech-item[data-tech="react"] .tech-icon { color: #61dafb; }
-.tech-item[data-tech="vue"] .tech-icon { color: #4fc08d; }
-.tech-item[data-tech="angular"] .tech-icon { color: #dd0031; }
-.tech-item[data-tech="nodejs"] .tech-icon { color: #339933; }
-.tech-item[data-tech="python"] .tech-icon { color: #3776ab; }
-.tech-item[data-tech="java"] .tech-icon { color: #ed8b00; }
-.tech-item[data-tech="postgresql"] .tech-icon { color: #336791; }
-.tech-item[data-tech="mongodb"] .tech-icon { color: #47a248; }
-.tech-item[data-tech="redis"] .tech-icon { color: #dc382d; }
-.tech-item[data-tech="docker"] .tech-icon { color: #2496ed; }
-.tech-item[data-tech="kubernetes"] .tech-icon { color: #326ce5; }
-.tech-item[data-tech="aws"] .tech-icon { color: #ff9900; }
-.tech-item[data-tech="azure"] .tech-icon { color: #0078d4; }
-.tech-item[data-tech="gcp"] .tech-icon { color: #4285f4; }
 
 @keyframes scroll {
   0% {
