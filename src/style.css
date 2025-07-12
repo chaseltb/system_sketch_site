@@ -452,16 +452,21 @@ nav {
 }
 
 .feature-icon {
-  font-size: 48px;
-  color: var(--primary);
+  width: 56px;
+  height: 56px;
+  background: var(--gradient-primary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
-  display: block;
+  color: white;
+  font-size: 24px;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-card:hover .feature-icon {
-  transform: scale(1.15);
-  color: var(--secondary);
+  transform: scale(1.1);
 }
 
 .feature-title {
@@ -547,18 +552,18 @@ nav {
 }
 
 .process-icon {
-  font-size: 48px;
-  color: var(--primary);
+  width: 56px;
+  height: 56px;
+  background: var(--gradient-primary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
   margin-bottom: 20px;
-  display: block;
   position: relative;
   z-index: 1;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.process-card:hover .process-icon {
-  transform: scale(1.15);
-  color: var(--secondary);
 }
 
 .process-content {
