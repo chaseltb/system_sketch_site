@@ -14,27 +14,52 @@ export function setupProcess() {
             Our streamlined workflow gets you from system design to running code faster than traditional development approaches.
           </p>
         </div>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="process-number">1</div>
-            <h3 class="process-title">Design your system visually</h3>
-            <p class="process-description">
-              Drag components onto the canvas and connect them to represent your architecture. Choose from our library of popular technologies or start with a template.
-            </p>
+        <div class="process-flow">
+          <div class="process-card">
+            <div class="process-icon">
+              <i class="ph ph-cursor-click"></i>
+            </div>
+            <div class="process-content">
+              <h3 class="process-title">Design your system visually</h3>
+              <p class="process-description">
+                Drag components onto the canvas and connect them to represent your architecture. Choose from our library of popular technologies or start with a template.
+              </p>
+            </div>
+            <div class="process-number">01</div>
           </div>
-          <div class="process-step">
-            <div class="process-number">2</div>
-            <h3 class="process-title">Configure and customize</h3>
-            <p class="process-description">
-              Set up your tech stack preferences, deployment targets, and project structure. Preview the generated file structure before proceeding.
-            </p>
+          
+          <div class="process-arrow">
+            <i class="ph ph-arrow-right"></i>
           </div>
-          <div class="process-step">
-            <div class="process-number">3</div>
-            <h3 class="process-title">Generate and deploy</h3>
-            <p class="process-description">
-              Download your complete project with starter code, Docker configs, and documentation. Start building features immediately instead of setting up infrastructure.
-            </p>
+          
+          <div class="process-card">
+            <div class="process-icon">
+              <i class="ph ph-gear"></i>
+            </div>
+            <div class="process-content">
+              <h3 class="process-title">Configure and customize</h3>
+              <p class="process-description">
+                Set up your tech stack preferences, deployment targets, and project structure. Preview the generated file structure before proceeding.
+              </p>
+            </div>
+            <div class="process-number">02</div>
+          </div>
+          
+          <div class="process-arrow">
+            <i class="ph ph-arrow-right"></i>
+          </div>
+          
+          <div class="process-card">
+            <div class="process-icon">
+              <i class="ph ph-rocket-launch"></i>
+            </div>
+            <div class="process-content">
+              <h3 class="process-title">Generate and deploy</h3>
+              <p class="process-description">
+                Download your complete project with starter code, Docker configs, and documentation. Start building features immediately instead of setting up infrastructure.
+              </p>
+            </div>
+            <div class="process-number">03</div>
           </div>
         </div>
       </div>
