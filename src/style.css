@@ -104,7 +104,7 @@ nav {
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 16px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -219,7 +219,7 @@ nav {
 
 .hero-image {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 24px;
   box-shadow: var(--shadow-xl);
   background: var(--bg-primary);
   border: 1px solid var(--border);
@@ -246,14 +246,14 @@ nav {
     rgba(0, 102, 255, 0.05) 100%);
 }
 
-/* Trusted By Section */
-#trusted-by {
+/* Technology Carousel Section */
+#tech-carousel {
   padding: 60px 0;
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border-light);
 }
 
-.trusted-text {
+.tech-text {
   text-align: center;
   color: var(--text-muted);
   font-size: 14px;
@@ -263,24 +263,98 @@ nav {
   letter-spacing: 0.5px;
 }
 
-.trusted-logos {
+.tech-carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-carousel {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 80px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.tech-icon {
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 48px;
-  flex-wrap: wrap;
-}
-
-.logo-item {
+  font-size: 32px;
   color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 16px;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.logo-item:hover {
-  opacity: 1;
+.tech-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Technology specific colors */
+.tech-item[data-tech="react"] .tech-icon { color: #61dafb; }
+.tech-item[data-tech="vue"] .tech-icon { color: #4fc08d; }
+.tech-item[data-tech="angular"] .tech-icon { color: #dd0031; }
+.tech-item[data-tech="nodejs"] .tech-icon { color: #339933; }
+.tech-item[data-tech="python"] .tech-icon { color: #3776ab; }
+.tech-item[data-tech="java"] .tech-icon { color: #ed8b00; }
+.tech-item[data-tech="postgresql"] .tech-icon { color: #336791; }
+.tech-item[data-tech="mongodb"] .tech-icon { color: #47a248; }
+.tech-item[data-tech="redis"] .tech-icon { color: #dc382d; }
+.tech-item[data-tech="docker"] .tech-icon { color: #2496ed; }
+.tech-item[data-tech="kubernetes"] .tech-icon { color: #326ce5; }
+.tech-item[data-tech="aws"] .tech-icon { color: #ff9900; }
+.tech-item[data-tech="azure"] .tech-icon { color: #0078d4; }
+.tech-item[data-tech="gcp"] .tech-icon { color: #4285f4; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-carousel-container::before,
+.tech-carousel-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tech-carousel-container::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--bg-primary) 0%, transparent 100%);
+}
+
+.tech-carousel-container::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--bg-primary) 0%, transparent 100%);
 }
 
 /* Features Section */
@@ -333,7 +407,7 @@ nav {
 .feature-card {
   background: var(--bg-primary);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 32px;
   transition: all 0.3s ease;
   position: relative;
@@ -366,7 +440,7 @@ nav {
   width: 48px;
   height: 48px;
   background: var(--gradient-primary);
-  border-radius: 12px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -429,7 +503,7 @@ nav {
   width: 64px;
   height: 64px;
   background: var(--gradient-primary);
-  border-radius: 50%;
+  border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -480,7 +554,7 @@ nav {
 .testimonial-card {
   background: var(--bg-primary);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 32px;
   position: relative;
   transition: all 0.3s ease;
@@ -508,7 +582,7 @@ nav {
 .testimonial-avatar {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  border-radius: 24px;
   background: var(--gradient-primary);
   display: flex;
   align-items: center;
@@ -543,7 +617,7 @@ nav {
 .faq-item {
   background: var(--bg-primary);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 16px;
   margin-bottom: 16px;
   overflow: hidden;
   transition: all 0.3s ease;
