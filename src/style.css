@@ -401,7 +401,7 @@ nav {
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 32px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 0 1px transparent;
@@ -414,9 +414,9 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature-card::after {
@@ -429,8 +429,8 @@ nav {
   border-radius: 20px;
   padding: 2px;
   background: linear-gradient(135deg, #0066ff, #6366f1, #10b981);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: xor;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -442,18 +442,18 @@ nav {
 }
 
 .feature-card:hover::after {
-  transform: scaleX(1);
+  opacity: 1;
 }
 
 .feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg), 0 0 30px rgba(0, 102, 255, 0.2);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl), 0 0 40px rgba(0, 102, 255, 0.15);
   border-color: var(--border);
 }
 
 .feature-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   background: var(--gradient-primary);
   border-radius: 16px;
   display: flex;
@@ -462,6 +462,11 @@ nav {
   margin-bottom: 20px;
   color: white;
   font-size: 24px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
 }
 
 .feature-title {

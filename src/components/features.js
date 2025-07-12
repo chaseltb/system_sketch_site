@@ -17,7 +17,7 @@ export function setupFeatures() {
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="ph ph-cursor-click"></i>
+              <i class="ph ph-selection-all"></i>
             </div>
             <h3 class="feature-title">Visual drag-and-drop design</h3>
             <p class="feature-description">
@@ -32,7 +32,7 @@ export function setupFeatures() {
           </div>
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="ph ph-code"></i>
+              <i class="ph ph-file-code"></i>
             </div>
             <h3 class="feature-title">Production-ready code generation</h3>
             <p class="feature-description">
@@ -47,7 +47,7 @@ export function setupFeatures() {
           </div>
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="ph ph-stack"></i>
+              <i class="ph ph-stack-simple"></i>
             </div>
             <h3 class="feature-title">Multi-technology support</h3>
             <p class="feature-description">
@@ -62,7 +62,7 @@ export function setupFeatures() {
           </div>
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="ph ph-users-three"></i>
+              <i class="ph ph-users-four"></i>
             </div>
             <h3 class="feature-title">Team collaboration made simple</h3>
             <p class="feature-description">
