@@ -16,9 +16,7 @@ export function setupFeatures() {
         </div>
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon">
-              <i class="ph ph-selection-all"></i>
-            </div>
+            <i class="ph ph-selection-all feature-icon"></i>
             <h3 class="feature-title">Visual drag-and-drop design</h3>
             <p class="feature-description">
               Build system architectures with an intuitive canvas. No more whiteboard sketches that get lost.
@@ -31,9 +29,7 @@ export function setupFeatures() {
             </ul>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">
-              <i class="ph ph-file-code"></i>
-            </div>
+            <i class="ph ph-file-code feature-icon"></i>
             <h3 class="feature-title">Production-ready code generation</h3>
             <p class="feature-description">
               Transform your visual designs into complete, working codebases with proper structure and best practices.
@@ -46,9 +42,7 @@ export function setupFeatures() {
             </ul>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">
-              <i class="ph ph-stack-simple"></i>
-            </div>
+            <i class="ph ph-stack-simple feature-icon"></i>
             <h3 class="feature-title">Multi-technology support</h3>
             <p class="feature-description">
               Work with the tools you love. Support for React, Vue, Node.js, Python, databases, and more.
@@ -61,9 +55,7 @@ export function setupFeatures() {
             </ul>
           </div>
           <div class="feature-card">
-            <div class="feature-icon">
-              <i class="ph ph-users-four"></i>
-            </div>
+            <i class="ph ph-users-four feature-icon"></i>
             <h3 class="feature-title">Team collaboration made simple</h3>
             <p class="feature-description">
               Bridge the gap between architects, developers, and stakeholders with shared visual understanding.

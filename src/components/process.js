@@ -16,9 +16,7 @@ export function setupProcess() {
         </div>
         <div class="process-flow">
           <div class="process-card">
-            <div class="process-icon">
-              <i class="ph ph-cursor-click"></i>
-            </div>
+            <i class="ph ph-cursor-click process-icon"></i>
             <div class="process-content">
               <h3 class="process-title">Design your system visually</h3>
               <p class="process-description">
@@ -33,9 +31,7 @@ export function setupProcess() {
           </div>
           
           <div class="process-card">
-            <div class="process-icon">
-              <i class="ph ph-gear"></i>
-            </div>
+            <i class="ph ph-gear process-icon"></i>
             <div class="process-content">
               <h3 class="process-title">Configure and customize</h3>
               <p class="process-description">
@@ -50,9 +46,7 @@ export function setupProcess() {
           </div>
           
           <div class="process-card">
-            <div class="process-icon">
-              <i class="ph ph-rocket-launch"></i>
-            </div>
+            <i class="ph ph-rocket-launch process-icon"></i>
             <div class="process-content">
               <h3 class="process-title">Generate and deploy</h3>
               <p class="process-description">
