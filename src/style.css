@@ -247,6 +247,44 @@ nav {
 }
 
 /* Technology Carousel Section */
+.tech-carousel-container {
+  margin-top: 24px;
+}
+
+.tech-text {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.tech-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 24px 0;
+}
+
+.tech-name {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.tech-name:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
 /* Features Section */
 .features {
   padding: 100px 0;
