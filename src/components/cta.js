@@ -14,11 +14,11 @@ export function setupCTA() {
               type="email" 
               placeholder="Enter your email" 
               required
-              style="flex: 1; min-width: 250px; padding: 16px 20px; border: 1px solid rgba(255,255,255,0.3); border-radius: 16px; font-size: 16px; background: rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px);"
+              style="flex: 1; min-width: 250px; padding: 16px 20px; border: 2px solid white; border-radius: 16px; font-size: 16px; background: white; color: var(--text-primary);"
             />
-            <button type="submit" class="btn btn-primary btn-large" style="background: white; color: var(--primary); white-space: nowrap;">
+            <button type="submit" class="btn btn-primary btn-large" style="background: var(--text-primary); color: white; white-space: nowrap; border: 2px solid var(--text-primary);">
               <i class="ph ph-envelope"></i>
-              Join the waitlist
+              Join waitlist
             </button>
           </form>
         </div>

@@ -641,26 +641,16 @@ nav {
   bottom: 0;
   border-radius: 20px;
   padding: 2px;
-  background: linear-gradient(135deg, #10b981, #6366f1, #0066ff);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
+  background: none;
 }
 
 .testimonial-card:hover::before {
   opacity: 1;
 }
 
-.testimonial-card:hover::after {
-  transform: scaleX(1);
-}
-
 .testimonial-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg), 0 0 30px rgba(16, 185, 129, 0.2);
+  box-shadow: var(--shadow-lg);
 }
 
 .testimonial-quote {
