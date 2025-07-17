@@ -753,14 +753,16 @@ nav {
 
 .faq-item.active .faq-chevron {
   transform: rotate(180deg);
-  color: var(--primary);
+  color: var(--text-secondary);
 }
 
 .faq-answer {
-  padding: 0 24px 24px;
+  padding: 24px;
+  background: var(--bg-secondary);
   color: var(--text-secondary);
   line-height: 1.6;
   display: none;
+  border-top: 1px solid var(--border);
 }
 
 .faq-item.active .faq-answer {

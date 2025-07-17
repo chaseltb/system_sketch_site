@@ -13,15 +13,19 @@ export function setupHero() {
           <p class="hero-subtitle">
             Used by 500+ developers to eliminate 20-40% of project setup time through visual architecture design and automated code generation
           </p>
-          <div class="hero-cta">
-            <a href="#features" class="btn btn-primary btn-large" aria-describedby="hero-title">
-              <i class="ph ph-play-circle"></i>
-              Start designing for free
-            </a>
-            <a href="#process" class="btn btn-secondary btn-large">
-              <i class="ph ph-video"></i>
-              Watch demo
-            </a>
+          <div class="hero-cta" style="max-width: 400px; margin: 0 auto 60px;">
+            <form class="waitlist-form" style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                required
+                style="flex: 1; min-width: 250px; padding: 16px 20px; border: 1px solid var(--border); border-radius: 16px; font-size: 16px; background: white;"
+              />
+              <button type="submit" class="btn btn-primary btn-large" style="white-space: nowrap;">
+                <i class="ph ph-envelope"></i>
+                Join the waitlist
+              </button>
+            </form>
           </div>
           <div class="hero-visual">
             <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
