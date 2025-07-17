@@ -14,14 +14,14 @@ export function setupHero() {
             Used by 500+ developers to eliminate 20-40% of project setup time through visual architecture design and automated code generation
           </p>
           <div class="hero-cta" style="max-width: 400px; margin: 0 auto 60px;">
-            <form class="waitlist-form" style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <form class="waitlist-form" style="display: flex; gap: 12px;">
               <input 
                 type="email" 
                 placeholder="Enter your email" 
                 required
-                style="flex: 1; min-width: 250px; padding: 16px 20px; border: 1px solid var(--border); border-radius: 16px; font-size: 16px; background: white;"
+                style="flex: 1; padding: 16px 20px; border: 1px solid var(--border); border-radius: 16px; font-size: 16px; background: white;"
               />
-              <button type="submit" class="btn btn-primary btn-large" style="white-space: nowrap;">
+              <button type="submit" class="btn btn-primary btn-large" style="white-space: nowrap; flex-shrink: 0;">
                 <i class="ph ph-envelope"></i>
                 Join the waitlist
               </button>
