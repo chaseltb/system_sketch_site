@@ -51,7 +51,7 @@ export function setupProcess() {
           
           <div class="process-card">
             <div class="process-icon">
-              <i class="ph ph-cloud"></i>
+              <i class="ph ph-gauge"></i>
             </div>
             <div class="process-content">
               <h3 class="process-title">Generate and deploy</h3>
