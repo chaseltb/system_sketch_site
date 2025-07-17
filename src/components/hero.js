@@ -23,7 +23,7 @@ export function setupHero() {
               />
               <button type="submit" class="btn btn-primary btn-large" style="white-space: nowrap; flex-shrink: 0;">
                 <i class="ph ph-envelope"></i>
-                Join the waitlist
+                Join waitlist
               </button>
             </form>
           </div>
