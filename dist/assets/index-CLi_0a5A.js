@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))i(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const c of t.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&i(c)}).observe(document,{childList:!0,subtree:!0});function o(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(s){if(s.ep)return;s.ep=!0;const t=o(s);fetch(s.href,t)}})();function r(){const e=document.querySelector("#navigation");e.innerHTML=`
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))i(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&i(r)}).observe(document,{childList:!0,subtree:!0});function o(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(s){if(s.ep)return;s.ep=!0;const t=o(s);fetch(s.href,t)}})();function n(){const e=document.querySelector("#navigation");e.innerHTML=`
     <div class="container">
       <div class="nav-content">
         <a href="#hero" class="nav-brand" aria-label="SystemSketch home">
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-  `,window.addEventListener("scroll",()=>{window.scrollY>50?(e.style.background="rgba(255, 255, 255, 0.98)",e.style.boxShadow="var(--shadow-sm)"):(e.style.background="rgba(255, 255, 255, 0.95)",e.style.boxShadow="none")}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(o){o.preventDefault();const i=document.querySelector(this.getAttribute("href"));i&&i.scrollIntoView({behavior:"smooth",block:"start"})})})}function n(){const e=document.querySelector("#hero");e.innerHTML=`
+  `,window.addEventListener("scroll",()=>{window.scrollY>50?(e.style.background="rgba(255, 255, 255, 0.98)",e.style.boxShadow="var(--shadow-sm)"):(e.style.background="rgba(255, 255, 255, 0.95)",e.style.boxShadow="none")}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(o){o.preventDefault();const i=document.querySelector(this.getAttribute("href"));i&&i.scrollIntoView({behavior:"smooth",block:"start"})})})}function c(){const e=document.querySelector("#hero");e.innerHTML=`
     <div class="hero">
       <div class="container">
         <div class="hero-content">
@@ -32,15 +32,19 @@
           <p class="hero-subtitle">
             Used by 500+ developers to eliminate 20-40% of project setup time through visual architecture design and automated code generation
           </p>
-          <div class="hero-cta">
-            <a href="#features" class="btn btn-primary btn-large" aria-describedby="hero-title">
-              <i class="ph ph-play-circle"></i>
-              Start designing for free
-            </a>
-            <a href="#process" class="btn btn-secondary btn-large">
-              <i class="ph ph-video"></i>
-              Watch demo
-            </a>
+          <div class="hero-cta" style="max-width: 400px; margin: 0 auto 60px;">
+            <form class="waitlist-form" style="display: flex; gap: 12px;">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                required
+                style="flex: 1; padding: 16px 20px; border: 1px solid var(--border); border-radius: 16px; font-size: 16px; background: white;"
+              />
+              <button type="submit" class="btn btn-primary btn-large" style="white-space: nowrap; flex-shrink: 0;">
+                <i class="ph ph-envelope"></i>
+                Join waitlist
+              </button>
+            </form>
           </div>
           <div class="hero-visual">
             <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
@@ -179,11 +183,8 @@
         </div>
         <div class="process-flow">
           <div class="process-card">
-            <div class="process-section-icon">
-              <i class="ph ph-pencil-simple"></i>
-            </div>
             <div class="process-icon">
-              <i class="ph ph-cursor-click"></i>
+              <i class="ph ph-pencil-simple"></i>
             </div>
             <div class="process-content">
               <h3 class="process-title">Design your system visually</h3>
@@ -199,9 +200,6 @@
           </div>
           
           <div class="process-card">
-            <div class="process-section-icon">
-              <i class="ph ph-sliders"></i>
-            </div>
             <div class="process-icon">
               <i class="ph ph-gear"></i>
             </div>
@@ -219,11 +217,8 @@
           </div>
           
           <div class="process-card">
-            <div class="process-section-icon">
-              <i class="ph ph-download"></i>
-            </div>
             <div class="process-icon">
-              <i class="ph ph-rocket-launch"></i>
+              <i class="ph ph-gauge"></i>
             </div>
             <div class="process-content">
               <h3 class="process-title">Generate and deploy</h3>
@@ -367,19 +362,23 @@
         <p>
           Join hundreds of developers who've eliminated weeks of setup time. Start designing your next system architecture visually and generate production-ready code in minutes.
         </p>
-        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap;">
-          <a href="#features" class="btn btn-primary btn-large" aria-describedby="cta-title">
-            <i class="ph ph-rocket-launch"></i>
-            Start building for free
-          </a>
-          <a href="#process" class="btn btn-secondary btn-large" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">
-            <i class="ph ph-calendar"></i>
-            Book a demo
-          </a>
+        <div style="max-width: 400px; margin: 0 auto;">
+          <form class="waitlist-form" style="display: flex; gap: 12px;">
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              required
+              style="flex: 1; padding: 16px 20px; border: 2px solid white; border-radius: 16px; font-size: 16px; background: white; color: var(--text-primary);"
+            />
+            <button type="submit" class="btn btn-primary btn-large" style="background: var(--text-primary); color: white; white-space: nowrap; border: 2px solid var(--text-primary); flex-shrink: 0;">
+              <i class="ph ph-envelope"></i>
+              Join waitlist
+            </button>
+          </form>
         </div>
       </div>
     </div>
-  `}function f(){const e=document.querySelector("#footer");e.innerHTML=`
+  `}function m(){const e=document.querySelector("#footer");e.innerHTML=`
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
@@ -411,4 +410,4 @@
         <p>&copy; 2025 SystemSketch. All rights reserved.</p>
       </div>
     </div>
-  `}r();n();l();d();p();u();h();v();f();
+  `}n();c();l();d();p();u();h();v();m();
