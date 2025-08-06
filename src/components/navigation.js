@@ -15,10 +15,9 @@ export function setupNavigation() {
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <div class="nav-cta">
-          <a href="#cta" class="btn btn-secondary">Sign in</a>
           <a href="#cta" class="btn btn-primary">
             <i class="ph ph-rocket-launch"></i>
-            Start building
+            Join the waitlist
           </a>
         </div>
       </div>
