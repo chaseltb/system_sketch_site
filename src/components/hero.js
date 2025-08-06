@@ -28,12 +28,47 @@ export function setupHero() {
             </form>
           </div>
           <div class="hero-visual">
-            <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
-              <div style="text-align: center; padding: 40px;">
-                <i class="ph ph-squares-four" style="font-size: 48px; color: var(--primary); margin-bottom: 16px; display: block;"></i>
-                <h3 style="color: var(--text-primary); margin-bottom: 8px;">Interactive System Designer</h3>
-                <p style="color: var(--text-secondary);">Drag, drop, connect → Generate production-ready code</p>
+            <div class="tech-carousel-section">
+              <p class="tech-text">Works with your favorite technologies</p>
+              <div class="tech-carousel-container">
+                <div class="tech-carousel">
+                  <div class="tech-track">
+                    <span class="tech-name">React</span>
+                    <span class="tech-name">Vue</span>
+                    <span class="tech-name">Angular</span>
+                    <span class="tech-name">Node.js</span>
+                    <span class="tech-name">Python</span>
+                    <span class="tech-name">Express</span>
+                    <span class="tech-name">FastAPI</span>
+                    <span class="tech-name">Django</span>
+                    <span class="tech-name">PostgreSQL</span>
+                    <span class="tech-name">MongoDB</span>
+                    <span class="tech-name">Redis</span>
+                    <span class="tech-name">Docker</span>
+                    <span class="tech-name">Kubernetes</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span class="tech-name">React</span>
+                    <span class="tech-name">Vue</span>
+                    <span class="tech-name">Angular</span>
+                    <span class="tech-name">Node.js</span>
+                    <span class="tech-name">Python</span>
+                    <span class="tech-name">Express</span>
+                    <span class="tech-name">FastAPI</span>
+                    <span class="tech-name">Django</span>
+                    <span class="tech-name">PostgreSQL</span>
+                    <span class="tech-name">MongoDB</span>
+                    <span class="tech-name">Redis</span>
+                    <span class="tech-name">Docker</span>
+                    <span class="tech-name">Kubernetes</span>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
+              <video autoplay loop muted playsinline poster="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                <source src="./ssketch demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

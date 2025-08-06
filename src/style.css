@@ -224,13 +224,18 @@ nav {
   background: var(--bg-primary);
   border: 1px solid var(--border);
   aspect-ratio: 16/10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: var(--text-muted);
   position: relative;
   overflow: hidden;
+}
+
+.hero-image video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .hero-image::before {
@@ -244,27 +249,37 @@ nav {
     rgba(99, 102, 241, 0.05) 0%, 
     rgba(16, 185, 129, 0.05) 50%, 
     rgba(0, 102, 255, 0.05) 100%);
+  z-index: 2;
 }
 
 /* Technology Carousel Section */
-.tech-carousel-container {
-  margin-top: 24px;
+.tech-carousel-section {
+  margin-bottom: 40px;
 }
 
 .tech-text {
   text-align: center;
   color: var(--text-secondary);
   font-size: 16px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.tech-carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
 .tech-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.tech-track {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 32px;
-  flex-wrap: wrap;
-  padding: 24px 0;
+  animation: scroll-left 30s linear infinite;
+  width: fit-content;
 }
 
 .tech-name {
@@ -276,6 +291,8 @@ nav {
   border-radius: 8px;
   border: 1px solid var(--border);
   transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .tech-name:hover {
@@ -283,6 +300,20 @@ nav {
   color: white;
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.tech-carousel:hover .tech-track {
+  animation-play-state: paused;
 }
 
 /* Features Section */
