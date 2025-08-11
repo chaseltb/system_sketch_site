@@ -65,7 +65,24 @@ export function setupHero() {
               </div>
             </div>
             <div class="hero-video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/irJg-uTr554?si=uk4Pyw8c-eGawMnm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="video-wrapper">
+                <iframe 
+                  id="youtube-video"
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/irJg-uTr554?si=uk4Pyw8c-eGawMnm&controls=0" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen>
+                </iframe>
+                <div class="custom-play-overlay" id="play-overlay">
+                  <button class="custom-play-button" id="custom-play-btn" aria-label="Play video">
+                    <i class="ph ph-play-fill"></i>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -73,10 +90,21 @@ export function setupHero() {
     </div>
   `
   
-  // Add video play functionality
-  const playButton = document.querySelector('#play-button')
-  const thumbnail = document.querySelector('#video-thumbnail')
-  const iframe = document.querySelector('#youtube-iframe')
+  // Add custom play button functionality
+  const customPlayBtn = document.querySelector('#custom-play-btn')
+  const playOverlay = document.querySelector('#play-overlay')
+  const iframe = document.querySelector('#youtube-video')
   
-
+  if (customPlayBtn && playOverlay && iframe) {
+    customPlayBtn.addEventListener('click', () => {
+      // Hide the custom play button overlay
+      playOverlay.style.display = 'none'
+      
+      // Update iframe src to include autoplay
+      const currentSrc = iframe.src
+      if (!currentSrc.includes('autoplay=1')) {
+        iframe.src = currentSrc + '&autoplay=1&mute=1'
+      }
+    })
+  }
 }
