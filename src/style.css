@@ -227,79 +227,15 @@ nav {
   box-shadow: var(--shadow-xl);
   background: var(--bg-primary);
   border: 1px solid var(--border);
-}
-
-.hero-video-container::before {
-  content: '';
-  display: block;
-  padding-top: 56.25%; /* 16:9 aspect ratio (315/560 * 100) */
-}
-
-.video-thumbnail {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-#youtube-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-video-container iframe {
   width: 100%;
-  height: 100%;
+  height: 315px;
   border: none;
-}
-
-.video-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-thumbnail:hover {
-  transform: scale(1.02);
-}
-
-.video-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  background: var(--primary);
-  border: none;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 32px;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-lg);
-  z-index: 2;
-}
-
-.video-play-button:hover {
-  background: var(--primary-dark);
-  transform: translate(-50%, -50%) scale(1.1);
-  box-shadow: var(--shadow-xl);
-}
-
-.video-play-button:active {
-  transform: translate(-50%, -50%) scale(0.95);
-}
-
-.video-play-button i {
-  margin-left: 4px; /* Slight offset to center the triangle visually */
+  border-radius: 24px;
 }
 
 

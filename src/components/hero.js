@@ -64,24 +64,16 @@ export function setupHero() {
                 </div>
               </div>
             </div>
-            <div class="hero-video-container" role="img" aria-label="SystemSketch demo video">
-              <div class="video-thumbnail" id="video-thumbnail">
-                <img src="https://img.youtube.com/vi/irJg-uTr554/maxresdefault.jpg" alt="SystemSketch Demo Video" />
-                <button class="video-play-button" id="play-button" aria-label="Play demo video">
-                  <i class="ph ph-play-fill"></i>
-                </button>
-              </div>
+            <div class="hero-video-container">
               <iframe 
-                id="youtube-iframe"
                 width="560" 
                 height="315" 
-                src="" 
+                src="https://www.youtube.com/embed/irJg-uTr554?si=Rm-oH1QWlrYmgmkm&controls=1" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen
-                style="display: none;">
+                allowfullscreen>
               </iframe>
             </div>
           </div>
