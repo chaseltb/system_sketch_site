@@ -75,7 +75,7 @@ export function setupHero() {
                 id="youtube-iframe"
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/irJg-uTr554?si=Rm-oH1QWlrYmgmkm&controls=0&autoplay=1&mute=1" 
+                src="" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -99,8 +99,8 @@ export function setupHero() {
     playButton.addEventListener('click', () => {
       thumbnail.style.display = 'none'
       iframe.style.display = 'block'
-      // Update iframe src to trigger autoplay
-      iframe.src = iframe.src.replace('autoplay=1&mute=1', 'autoplay=1&mute=0')
+      // Set iframe src to trigger loading and autoplay
+      iframe.src = 'https://www.youtube.com/embed/irJg-uTr554?si=Rm-oH1QWlrYmgmkm&controls=0&autoplay=1&mute=1'
     })
   }
 }
