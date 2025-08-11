@@ -64,15 +64,41 @@ export function setupHero() {
                 </div>
               </div>
             </div>
-            <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
-              <video autoplay loop muted playsinline poster="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200">
-                <source src="./ssketch demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+            <div class="hero-video-container" role="img" aria-label="SystemSketch demo video">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/irJg-uTr554/maxresdefault.jpg" alt="SystemSketch Demo Video" />
+                <button class="video-play-button" aria-label="Play demo video">
+                  <i class="ph ph-play-fill"></i>
+                </button>
+              </div>
+              <iframe 
+                id="youtube-iframe"
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/irJg-uTr554?si=Rm-oH1QWlrYmgmkm&controls=0&autoplay=1&mute=1" 
+                title="SystemSketch Demo Video" 
+                frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+                style="display: none;">
+              </iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
   `
+  
+  // Add video play functionality
+  const playButton = document.querySelector('.video-play-button')
+  const thumbnail = document.querySelector('.video-thumbnail')
+  const iframe = document.querySelector('#youtube-iframe')
+  
+  if (playButton && thumbnail && iframe) {
+    playButton.addEventListener('click', () => {
+      thumbnail.style.display = 'none'
+      iframe.style.display = 'block'
+    })
+  }
 }
