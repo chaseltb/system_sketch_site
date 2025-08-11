@@ -103,4 +103,25 @@ export function setupHero() {
       iframe.src = 'https://www.youtube.com/embed/irJg-uTr554?si=Rm-oH1QWlrYmgmkm&controls=0&autoplay=1&mute=1'
     })
   }
+
+  if (playButton && thumbnail) {
+  playButton.addEventListener('click', () => {
+    thumbnail.style.display = 'none';
+
+    // Create iframe dynamically
+    const newIframe = document.createElement('iframe');
+    newIframe.width = "560";
+    newIframe.height = "315";
+    newIframe.src = "https://www.youtube.com/embed/irJg-uTr554?controls=0&autoplay=1&mute=1";
+    newIframe.title = "YouTube video player";
+    newIframe.frameBorder = "0";
+    newIframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    newIframe.referrerPolicy = "strict-origin-when-cross-origin";
+    newIframe.allowFullscreen = true;
+
+    // Append to container
+    document.querySelector('.hero-video-container').appendChild(newIframe);
+  });
+}
 }
