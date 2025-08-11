@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))a(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function o(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(s){if(s.ep)return;s.ep=!0;const t=o(s);fetch(s.href,t)}})();function n(){const e=document.querySelector("#navigation");e.innerHTML=`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))a(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function o(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(s){if(s.ep)return;s.ep=!0;const t=o(s);fetch(s.href,t)}})();function c(){const e=document.querySelector("#navigation");e.innerHTML=`
     <div class="container">
       <div class="nav-content">
         <a href="#hero" class="nav-brand" aria-label="SystemSketch home">
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-  `,window.addEventListener("scroll",()=>{window.scrollY>50?(e.style.background="rgba(255, 255, 255, 0.98)",e.style.boxShadow="var(--shadow-sm)"):(e.style.background="rgba(255, 255, 255, 0.95)",e.style.boxShadow="none")}),document.querySelectorAll('a[href^="#"]').forEach(i=>{i.addEventListener("click",function(o){o.preventDefault();const a=document.querySelector(this.getAttribute("href"));a&&a.scrollIntoView({behavior:"smooth",block:"start"})})})}function c(){const e=document.querySelector("#hero");e.innerHTML=`
+  `,window.addEventListener("scroll",()=>{window.scrollY>50?(e.style.background="rgba(255, 255, 255, 0.98)",e.style.boxShadow="var(--shadow-sm)"):(e.style.background="rgba(255, 255, 255, 0.95)",e.style.boxShadow="none")}),document.querySelectorAll('a[href^="#"]').forEach(i=>{i.addEventListener("click",function(o){o.preventDefault();const a=document.querySelector(this.getAttribute("href"));a&&a.scrollIntoView({behavior:"smooth",block:"start"})})})}function n(){const e=document.querySelector("#hero");e.innerHTML=`
     <div class="hero">
       <div class="container">
         <div class="hero-content">
@@ -106,7 +106,7 @@
         </div>
       </div>
     </div>
-  `;const i=document.querySelector("#custom-play-btn"),o=document.querySelector("#play-overlay"),a=document.querySelector("#youtube-video");i&&o&&a&&i.addEventListener("click",()=>{o.style.display="none";const s=a.src;s.includes("autoplay=1")||(a.src=s+"&autoplay=1&mute=1")})}function l(){const e=document.querySelector("#tech-carousel");e.style.display="none"}function d(){const e=document.querySelector("#features");e.innerHTML=`
+  `;const i=document.querySelector("#custom-play-btn"),o=document.querySelector("#play-overlay"),a=document.querySelector("#youtube-video");i&&o&&a&&i.addEventListener("click",()=>{o.remove();const s=a.src;s.includes("autoplay=1")||(a.src=s+"&autoplay=1&mute=1")})}function l(){const e=document.querySelector("#tech-carousel");e.style.display="none"}function d(){const e=document.querySelector("#features");e.innerHTML=`
     <div class="features">
       <div class="container">
         <div class="section-header">
@@ -437,4 +437,4 @@
         <p>&copy; 2025 SystemSketch. All rights reserved.</p>
       </div>
     </div>
-  `}n();c();l();d();p();u();h();v();m();
+  `}c();n();l();d();p();u();h();v();m();
