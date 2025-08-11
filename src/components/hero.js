@@ -67,7 +67,7 @@ export function setupHero() {
             <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
               <div class="video-container">
                 <video id="hero-video" muted playsinline poster="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200">
-                  <source src="./ssketch demo.mp4" type="video/mp4">
+                  <source src="./ssketch%20demo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
                 <div class="video-play-overlay" id="play-overlay">
