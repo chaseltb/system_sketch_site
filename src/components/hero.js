@@ -65,115 +65,14 @@ export function setupHero() {
               </div>
             </div>
             <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
-              <div class="video-container">
-                <video id="hero-video" muted playsinline poster="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200">
-                  <source src="./ssketch demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="video-play-overlay" id="play-overlay">
-                  <i class="ph ph-play"></i>
-                </div>
-                <div class="video-controls" id="video-controls">
-                  <div class="video-progress-container">
-                    <div class="video-progress" id="progress-bar">
-                      <div class="video-progress-bar" id="progress-fill"></div>
-                    </div>
-                    <div class="video-time" id="video-time">0:00 / 0:00</div>
-                  </div>
-                  <div class="video-controls-buttons">
-                    <button class="video-control-btn" id="play-pause-btn">
-                      <i class="ph ph-play"></i>
-                    </button>
-                    <button class="video-control-btn" id="restart-btn">
-                      <i class="ph ph-arrow-counter-clockwise"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <video autoplay loop muted playsinline poster="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                <source src="./ssketch demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
       </div>
     </div>
   `
-  
-  // Add video controls functionality
-  const video = document.getElementById('hero-video')
-  const playOverlay = document.getElementById('play-overlay')
-  const playPauseBtn = document.getElementById('play-pause-btn')
-  const restartBtn = document.getElementById('restart-btn')
-  const progressBar = document.getElementById('progress-bar')
-  const progressFill = document.getElementById('progress-fill')
-  const videoTime = document.getElementById('video-time')
-  
-  let isPlaying = false
-  
-  // Format time helper
-  function formatTime(seconds) {
-    const mins = Math.floor(seconds / 60)
-    const secs = Math.floor(seconds % 60)
-    return `${mins}:${secs.toString().padStart(2, '0')}`
-  }
-  
-  // Update progress and time
-  function updateProgress() {
-    if (video.duration) {
-      const progress = (video.currentTime / video.duration) * 100
-      progressFill.style.width = `${progress}%`
-      videoTime.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`
-    }
-  }
-  
-  // Toggle play/pause
-  function togglePlayPause() {
-    if (isPlaying) {
-      video.pause()
-      isPlaying = false
-      playPauseBtn.innerHTML = '<i class="ph ph-play"></i>'
-      playOverlay.innerHTML = '<i class="ph ph-play"></i>'
-      playOverlay.classList.add('show')
-    } else {
-      video.play()
-      isPlaying = true
-      playPauseBtn.innerHTML = '<i class="ph ph-pause"></i>'
-      playOverlay.innerHTML = '<i class="ph ph-pause"></i>'
-      playOverlay.classList.remove('show')
-    }
-  }
-  
-  // Event listeners
-  video.addEventListener('loadedmetadata', updateProgress)
-  video.addEventListener('timeupdate', updateProgress)
-  
-  // Click to play/pause
-  video.addEventListener('click', togglePlayPause)
-  playOverlay.addEventListener('click', togglePlayPause)
-  playPauseBtn.addEventListener('click', togglePlayPause)
-  
-  // Restart button
-  restartBtn.addEventListener('click', () => {
-    video.currentTime = 0
-    updateProgress()
-  })
-  
-  // Progress bar click
-  progressBar.addEventListener('click', (e) => {
-    const rect = progressBar.getBoundingClientRect()
-    const clickX = e.clientX - rect.left
-    const width = rect.width
-    const clickPercent = clickX / width
-    video.currentTime = clickPercent * video.duration
-  })
-  
-  // Show play overlay initially
-  playOverlay.classList.add('show')
-  
-  // Auto-hide overlay after a few seconds when playing
-  video.addEventListener('play', () => {
-    setTimeout(() => {
-      if (isPlaying) {
-        playOverlay.classList.remove('show')
-      }
-    }, 1000)
-  })
 }
