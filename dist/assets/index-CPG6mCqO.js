@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))i(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&i(r)}).observe(document,{childList:!0,subtree:!0});function o(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(s){if(s.ep)return;s.ep=!0;const t=o(s);fetch(s.href,t)}})();function n(){const e=document.querySelector("#navigation");e.innerHTML=`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))a(s);new MutationObserver(s=>{for(const t of s)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function o(s){const t={};return s.integrity&&(t.integrity=s.integrity),s.referrerPolicy&&(t.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?t.credentials="include":s.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function a(s){if(s.ep)return;s.ep=!0;const t=o(s);fetch(s.href,t)}})();function n(){const e=document.querySelector("#navigation");e.innerHTML=`
     <div class="container">
       <div class="nav-content">
         <a href="#hero" class="nav-brand" aria-label="SystemSketch home">
@@ -12,15 +12,14 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <div class="nav-cta">
-          <a href="#cta" class="btn btn-secondary">Sign in</a>
           <a href="#cta" class="btn btn-primary">
             <i class="ph ph-rocket-launch"></i>
-            Start building
+            Join the waitlist
           </a>
         </div>
       </div>
     </div>
-  `,window.addEventListener("scroll",()=>{window.scrollY>50?(e.style.background="rgba(255, 255, 255, 0.98)",e.style.boxShadow="var(--shadow-sm)"):(e.style.background="rgba(255, 255, 255, 0.95)",e.style.boxShadow="none")}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(o){o.preventDefault();const i=document.querySelector(this.getAttribute("href"));i&&i.scrollIntoView({behavior:"smooth",block:"start"})})})}function c(){const e=document.querySelector("#hero");e.innerHTML=`
+  `,window.addEventListener("scroll",()=>{window.scrollY>50?(e.style.background="rgba(255, 255, 255, 0.98)",e.style.boxShadow="var(--shadow-sm)"):(e.style.background="rgba(255, 255, 255, 0.95)",e.style.boxShadow="none")}),document.querySelectorAll('a[href^="#"]').forEach(i=>{i.addEventListener("click",function(o){o.preventDefault();const a=document.querySelector(this.getAttribute("href"));a&&a.scrollIntoView({behavior:"smooth",block:"start"})})})}function c(){const e=document.querySelector("#hero");e.innerHTML=`
     <div class="hero">
       <div class="container">
         <div class="hero-content">
@@ -47,39 +46,59 @@
             </form>
           </div>
           <div class="hero-visual">
-            <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
-              <div style="text-align: center; padding: 40px;">
-                <i class="ph ph-squares-four" style="font-size: 48px; color: var(--primary); margin-bottom: 16px; display: block;"></i>
-                <h3 style="color: var(--text-primary); margin-bottom: 8px;">Interactive System Designer</h3>
-                <p style="color: var(--text-secondary);">Drag, drop, connect → Generate production-ready code</p>
+            <div class="tech-carousel-section">
+              <p class="tech-text">Works with your favorite technologies</p>
+              <div class="tech-carousel-container">
+                <div class="tech-carousel">
+                  <div class="tech-track">
+                    <span class="tech-name">React</span>
+                    <span class="tech-name">Vue</span>
+                    <span class="tech-name">Angular</span>
+                    <span class="tech-name">Node.js</span>
+                    <span class="tech-name">Python</span>
+                    <span class="tech-name">Express</span>
+                    <span class="tech-name">FastAPI</span>
+                    <span class="tech-name">Django</span>
+                    <span class="tech-name">PostgreSQL</span>
+                    <span class="tech-name">MongoDB</span>
+                    <span class="tech-name">Redis</span>
+                    <span class="tech-name">Docker</span>
+                    <span class="tech-name">Kubernetes</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span class="tech-name">React</span>
+                    <span class="tech-name">Vue</span>
+                    <span class="tech-name">Angular</span>
+                    <span class="tech-name">Node.js</span>
+                    <span class="tech-name">Python</span>
+                    <span class="tech-name">Express</span>
+                    <span class="tech-name">FastAPI</span>
+                    <span class="tech-name">Django</span>
+                    <span class="tech-name">PostgreSQL</span>
+                    <span class="tech-name">MongoDB</span>
+                    <span class="tech-name">Redis</span>
+                    <span class="tech-name">Docker</span>
+                    <span class="tech-name">Kubernetes</span>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="hero-video-container">
+              <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/irJg-uTr554?si=Rm-oH1QWlrYmgmkm&controls=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
-  `}function l(){const e=document.querySelector("#tech-carousel");e.innerHTML=`
-    <div class="container">
-      <p class="tech-text">Works with your favorite technologies</p>
-      <div class="tech-carousel-container">
-        <div class="tech-carousel">
-          <span class="tech-name">React</span>
-          <span class="tech-name">Vue</span>
-          <span class="tech-name">Angular</span>
-          <span class="tech-name">Node.js</span>
-          <span class="tech-name">Python</span>
-          <span class="tech-name">Express</span>
-          <span class="tech-name">FastAPI</span>
-          <span class="tech-name">Django</span>
-          <span class="tech-name">PostgreSQL</span>
-          <span class="tech-name">MongoDB</span>
-          <span class="tech-name">Redis</span>
-          <span class="tech-name">Docker</span>
-          <span class="tech-name">Kubernetes</span>
-        </div>
-      </div>
-    </div>
-  `}function d(){const e=document.querySelector("#features");e.innerHTML=`
+  `,document.querySelector("#play-button"),document.querySelector("#video-thumbnail"),document.querySelector("#youtube-iframe")}function l(){const e=document.querySelector("#tech-carousel");e.style.display="none"}function d(){const e=document.querySelector("#features");e.innerHTML=`
     <div class="features">
       <div class="container">
         <div class="section-header">
@@ -355,7 +374,7 @@
         </div>
       </div>
     </div>
-  `;const a=document.querySelectorAll(".faq-item");a.forEach(o=>{const i=o.querySelector(".faq-question");i.addEventListener("click",()=>{const s=o.classList.contains("active");a.forEach(t=>{t.classList.remove("active"),t.querySelector(".faq-question").setAttribute("aria-expanded","false")}),s?i.setAttribute("aria-expanded","false"):(o.classList.add("active"),i.setAttribute("aria-expanded","true"))})})}function v(){const e=document.querySelector("#cta");e.innerHTML=`
+  `;const i=document.querySelectorAll(".faq-item");i.forEach(o=>{const a=o.querySelector(".faq-question");a.addEventListener("click",()=>{const s=o.classList.contains("active");i.forEach(t=>{t.classList.remove("active"),t.querySelector(".faq-question").setAttribute("aria-expanded","false")}),s?a.setAttribute("aria-expanded","false"):(o.classList.add("active"),a.setAttribute("aria-expanded","true"))})})}function v(){const e=document.querySelector("#cta");e.innerHTML=`
     <div class="cta">
       <div class="container">
         <h2 id="cta-title">Ready to transform your development workflow?</h2>
