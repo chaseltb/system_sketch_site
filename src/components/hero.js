@@ -97,8 +97,8 @@ export function setupHero() {
   
   if (customPlayBtn && playOverlay && iframe) {
     customPlayBtn.addEventListener('click', () => {
-      // Hide the custom play button overlay
-      playOverlay.style.display = 'none'
+      // Remove the custom play button overlay completely
+      playOverlay.remove()
       
       // Update iframe src to include autoplay
       const currentSrc = iframe.src
