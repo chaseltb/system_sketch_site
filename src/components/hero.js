@@ -62,30 +62,32 @@ export function setupHero() {
                     <span class="tech-name">Kubernetes</span>
                   </div>
                 </div>
-              <video id="hero-video" muted playsinline poster="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200">
-                <source src="./ssketch demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <div class="video-play-overlay" id="play-overlay">
-                <i class="ph ph-play"></i>
               </div>
-              <div class="video-controls" id="video-controls">
-                <div class="video-progress-container">
-                  <div class="video-progress" id="progress-bar">
-                    <div class="video-progress-bar" id="progress-fill"></div>
-                  </div>
-                  <div class="video-time" id="video-time">0:00 / 0:00</div>
+            </div>
+            <div class="hero-image" role="img" aria-label="SystemSketch interface preview">
+              <div class="video-container">
+                <video id="hero-video" muted playsinline poster="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                  <source src="./ssketch demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="video-play-overlay" id="play-overlay">
+                  <i class="ph ph-play"></i>
                 </div>
-                <div class="video-controls-buttons">
-                  <button class="video-control-btn" id="play-pause-btn">
-                    <i class="ph ph-play"></i>
-                  </button>
-                  <button class="video-control-btn" id="restart-btn">
-                    <i class="ph ph-arrow-counter-clockwise"></i>
-                  </button>
-                  <button class="video-control-btn" id="fullscreen-btn">
-                    <i class="ph ph-corners-out"></i>
-                  </button>
+                <div class="video-controls" id="video-controls">
+                  <div class="video-progress-container">
+                    <div class="video-progress" id="progress-bar">
+                      <div class="video-progress-bar" id="progress-fill"></div>
+                    </div>
+                    <div class="video-time" id="video-time">0:00 / 0:00</div>
+                  </div>
+                  <div class="video-controls-buttons">
+                    <button class="video-control-btn" id="play-pause-btn">
+                      <i class="ph ph-play"></i>
+                    </button>
+                    <button class="video-control-btn" id="restart-btn">
+                      <i class="ph ph-arrow-counter-clockwise"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -95,29 +97,16 @@ export function setupHero() {
     </div>
   `
   
-  // Video controls functionality
+  // Add video controls functionality
   const video = document.getElementById('hero-video')
   const playOverlay = document.getElementById('play-overlay')
   const playPauseBtn = document.getElementById('play-pause-btn')
   const restartBtn = document.getElementById('restart-btn')
-  const fullscreenBtn = document.getElementById('fullscreen-btn')
   const progressBar = document.getElementById('progress-bar')
   const progressFill = document.getElementById('progress-fill')
   const videoTime = document.getElementById('video-time')
   
   let isPlaying = false
-  let autoplayTimer = null
-  
-  // Autoplay after 2 seconds
-  autoplayTimer = setTimeout(() => {
-    if (video && !isPlaying) {
-      video.play()
-      isPlaying = true
-      playPauseBtn.innerHTML = '<i class="ph ph-pause"></i>'
-      playOverlay.innerHTML = '<i class="ph ph-pause"></i>'
-      playOverlay.classList.remove('show')
-    }
-  }, 2000)
   
   // Format time helper
   function formatTime(seconds) {
@@ -176,26 +165,6 @@ export function setupHero() {
     video.currentTime = clickPercent * video.duration
   })
   
-  // Fullscreen functionality
-  fullscreenBtn.addEventListener('click', () => {
-    if (!document.fullscreenElement) {
-      video.requestFullscreen().then(() => {
-        fullscreenBtn.innerHTML = '<i class="ph ph-corners-in"></i>'
-      }).catch(err => {
-        console.log('Error attempting to enable fullscreen:', err)
-      })
-    } else {
-      document.exitFullscreen().then(() => {
-        fullscreenBtn.innerHTML = '<i class="ph ph-corners-out"></i>'
-      })
-    }
-  })
-  
-  // Listen for fullscreen changes
-  document.addEventListener('fullscreenchange', () => {
-    fullscreenBtn.innerHTML = document.fullscreenElement ? '<i class="ph ph-corners-in"></i>' : '<i class="ph ph-corners-out"></i>'
-  })
-  
   // Show play overlay initially
   playOverlay.classList.add('show')
   
@@ -206,12 +175,5 @@ export function setupHero() {
         playOverlay.classList.remove('show')
       }
     }, 1000)
-  })
-  
-  // Clear autoplay timer if user interacts before it triggers
-  video.addEventListener('click', () => {
-    if (autoplayTimer) {
-      clearTimeout(autoplayTimer)
-    }
   })
 }
