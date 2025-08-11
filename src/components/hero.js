@@ -65,13 +65,24 @@ export function setupHero() {
               </div>
             </div>
             <div class="hero-video-container" role="img" aria-label="SystemSketch demo video">
-              <div class="video-thumbnail">
+              <div class="video-thumbnail" id="video-thumbnail">
                 <img src="https://img.youtube.com/vi/irJg-uTr554/maxresdefault.jpg" alt="SystemSketch Demo Video" />
-                <button class="video-play-button" aria-label="Play demo video">
+                <button class="video-play-button" id="play-button" aria-label="Play demo video">
                   <i class="ph ph-play-fill"></i>
                 </button>
               </div>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/irJg-uTr554?si=uk4Pyw8c-eGawMnm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe 
+                id="youtube-iframe"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/irJg-uTr554?si=Rm-oH1QWlrYmgmkm&controls=0&autoplay=1&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+                style="display: none;">
+              </iframe>
             </div>
           </div>
         </div>
@@ -80,14 +91,16 @@ export function setupHero() {
   `
   
   // Add video play functionality
-  const playButton = document.querySelector('.video-play-button')
-  const thumbnail = document.querySelector('.video-thumbnail')
+  const playButton = document.querySelector('#play-button')
+  const thumbnail = document.querySelector('#video-thumbnail')
   const iframe = document.querySelector('#youtube-iframe')
   
   if (playButton && thumbnail && iframe) {
     playButton.addEventListener('click', () => {
       thumbnail.style.display = 'none'
       iframe.style.display = 'block'
+      // Update iframe src to trigger autoplay
+      iframe.src = iframe.src.replace('autoplay=1&mute=1', 'autoplay=1&mute=0')
     })
   }
 }
