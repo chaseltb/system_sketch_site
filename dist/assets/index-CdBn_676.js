@@ -83,13 +83,30 @@
               </div>
             </div>
             <div class="hero-video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/irJg-uTr554?si=uk4Pyw8c-eGawMnm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <div class="video-wrapper">
+                <iframe 
+                  id="youtube-video"
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/irJg-uTr554?si=uk4Pyw8c-eGawMnm&controls=0" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen>
+                </iframe>
+                <div class="custom-play-overlay" id="play-overlay">
+                  <button class="custom-play-button" id="custom-play-btn" aria-label="Play video">
+                    <i class="ph ph-play-fill"></i>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  `,document.querySelector("#play-button"),document.querySelector("#video-thumbnail"),document.querySelector("#youtube-iframe")}function l(){const e=document.querySelector("#tech-carousel");e.style.display="none"}function d(){const e=document.querySelector("#features");e.innerHTML=`
+  `;const i=document.querySelector("#custom-play-btn"),o=document.querySelector("#play-overlay"),a=document.querySelector("#youtube-video");i&&o&&a&&i.addEventListener("click",()=>{o.style.display="none";const s=a.src;s.includes("autoplay=1")||(a.src=s+"&autoplay=1&mute=1")})}function l(){const e=document.querySelector("#tech-carousel");e.style.display="none"}function d(){const e=document.querySelector("#features");e.innerHTML=`
     <div class="features">
       <div class="container">
         <div class="section-header">
