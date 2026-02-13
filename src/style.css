@@ -156,9 +156,32 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 70% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+  background: var(--gradient-mesh);
   pointer-events: none;
+  animation: meshFloat 20s ease-in-out infinite;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(0, 102, 255, 0.03) 60deg, transparent 120deg, rgba(16, 185, 129, 0.03) 180deg, transparent 240deg, rgba(99, 102, 241, 0.03) 300deg, transparent 360deg);
+  animation: rotate 30s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes meshFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(1deg); }
+  66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .hero-content {
@@ -186,10 +209,17 @@ nav {
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary) 50%, var(--accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .hero-subtitle {
