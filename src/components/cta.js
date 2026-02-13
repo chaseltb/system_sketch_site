@@ -6,7 +6,7 @@ export function setupCTA() {
       <div class="container">
         <h2 id="cta-title">Ready to transform your development workflow?</h2>
         <p>
-          Join hundreds of developers who've eliminated weeks of setup time. Start designing your next system architecture visually and generate production-ready code in minutes.
+          Stop wasting weeks on setup and start shipping features your users actually want. Join 500+ developers who've already transformed how they build software.
         </p>
         <div style="max-width: 400px; margin: 0 auto;">
           <form class="waitlist-form" style="display: flex; gap: 12px;">

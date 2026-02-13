@@ -7,11 +7,11 @@ export function setupProcess() {
         <div class="section-header">
           <div class="section-badge">
             <i class="ph ph-path"></i>
-            Simple process
+            How it works
           </div>
-          <h2 id="process-title" class="section-title">From architecture to code in 3 steps</h2>
+          <h2 id="process-title" class="section-title">From idea to deployed app in under an hour</h2>
           <p class="section-subtitle">
-            Our streamlined workflow gets you from system design to running code faster than traditional development approaches.
+            What used to take weeks now takes minutes. Here's how you'll go from concept to working application faster than ever before.
           </p>
         </div>
         <div class="process-flow">
@@ -20,9 +20,9 @@ export function setupProcess() {
               <i class="ph ph-pencil-simple"></i>
             </div>
             <div class="process-content">
-              <h3 class="process-title">Design your system visually</h3>
+              <h3 class="process-title">Sketch your idea in 5 minutes</h3>
               <p class="process-description">
-                Drag components onto the canvas and connect them to represent your architecture. Choose from our library of popular technologies or start with a template.
+                Stop overthinking and start building. Drag and drop components to create your system architecture. No technical drawings or complex documentation needed.
               </p>
             </div>
             <div class="process-number">01</div>
@@ -37,9 +37,9 @@ export function setupProcess() {
               <i class="ph ph-gear"></i>
             </div>
             <div class="process-content">
-              <h3 class="process-title">Configure and customize</h3>
+              <h3 class="process-title">Customize to your needs</h3>
               <p class="process-description">
-                Set up your tech stack preferences, deployment targets, and project structure. Preview the generated file structure before proceeding.
+                Choose your preferred technologies and deployment options. See exactly what you'll get before generating any code. No surprises, no vendor lock-in.
               </p>
             </div>
             <div class="process-number">02</div>
@@ -54,9 +54,9 @@ export function setupProcess() {
               <i class="ph ph-gauge"></i>
             </div>
             <div class="process-content">
-              <h3 class="process-title">Generate and deploy</h3>
+              <h3 class="process-title">Launch immediately</h3>
               <p class="process-description">
-                Download your complete project with starter code, Docker configs, and documentation. Start building features immediately instead of setting up infrastructure.
+                Get your complete, working application in seconds. Deploy with one click or download to continue locally. Start adding business logic on day one.
               </p>
             </div>
             <div class="process-number">03</div>

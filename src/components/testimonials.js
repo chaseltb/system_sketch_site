@@ -17,7 +17,7 @@ export function setupTestimonials() {
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <p class="testimonial-quote">
-              "SystemSketch cut our project setup time from 2 weeks to 2 hours. The generated code follows best practices and actually works out of the box. Game changer for our agency."
+              "We used to spend 2-3 weeks on project setup before writing a single feature. Now we're deploying working prototypes in hours. Our clients are amazed at how fast we deliver."
             </p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">SM</div>
@@ -29,7 +29,7 @@ export function setupTestimonials() {
           </div>
           <div class="testimonial-card">
             <p class="testimonial-quote">
-              "As a solution architect, I finally have a tool that bridges design and implementation. My developers get exactly what I envisioned, and clients can see the architecture clearly."
+              "Finally, a way to show clients exactly what we're building before we build it. No more miscommunication, no more scope creep. Projects stay on budget and on time."
             </p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">JC</div>
@@ -41,7 +41,7 @@ export function setupTestimonials() {
           </div>
           <div class="testimonial-card">
             <p class="testimonial-quote">
-              "Teaching system design became so much easier. Students can experiment with different architectures and see the actual code structure. It's like having a coding mentor built-in."
+              "My students went from struggling with system design concepts to building real applications in weeks instead of months. They're getting job offers before graduation."
             </p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">AL</div>

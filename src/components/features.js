@@ -7,11 +7,11 @@ export function setupFeatures() {
         <div class="section-header">
           <div class="section-badge">
             <i class="ph ph-lightning"></i>
-            Core capabilities
+            Why developers choose us
           </div>
-          <h2 id="features-title" class="section-title">Everything you need to go from idea to implementation</h2>
+          <h2 id="features-title" class="section-title">Stop wasting time on setup, start shipping faster</h2>
           <p class="section-subtitle">
-            Stop wrestling with boilerplate code and focus on building what matters. SystemSketch handles the heavy lifting.
+            Transform weeks of tedious project setup into minutes of visual design. Get straight to building the features your users actually want.
           </p>
         </div>
         <div class="features-grid">
@@ -22,15 +22,15 @@ export function setupFeatures() {
             <div class="feature-icon">
               <i class="ph ph-selection-all"></i>
             </div>
-            <h3 class="feature-title">Visual drag-and-drop design</h3>
+            <h3 class="feature-title">Design systems in minutes, not days</h3>
             <p class="feature-description">
-              Build system architectures with an intuitive canvas. No more whiteboard sketches that get lost.
+              Skip the endless whiteboard sessions and documentation. Design your entire system architecture visually and share it instantly with your team.
             </p>
             <ul class="feature-list">
-              <li>Pre-built components for popular technologies</li>
-              <li>Smart connection system for data flows</li>
-              <li>Real-time collaboration with your team</li>
-              <li>Template library for common patterns</li>
+              <li>Save 2-3 weeks on every new project</li>
+              <li>Get team alignment before writing any code</li>
+              <li>Start with proven architecture patterns</li>
+              <li>Never lose track of system dependencies again</li>
             </ul>
           </div>
           <div class="feature-card">
@@ -40,15 +40,15 @@ export function setupFeatures() {
             <div class="feature-icon">
               <i class="ph ph-file-code"></i>
             </div>
-            <h3 class="feature-title">Production-ready code generation</h3>
+            <h3 class="feature-title">Launch with confidence from day one</h3>
             <p class="feature-description">
-              Transform your visual designs into complete, working codebases with proper structure and best practices.
+              Get production-ready code that follows industry best practices. No more starting from scratch or copying outdated boilerplate.
             </p>
             <ul class="feature-list">
-              <li>Full project scaffolding with folder structure</li>
-              <li>Docker configurations and deployment files</li>
-              <li>Comprehensive documentation and setup guides</li>
-              <li>Industry-standard code patterns</li>
+              <li>Deploy immediately with zero configuration</li>
+              <li>Built-in security and error handling</li>
+              <li>Complete documentation saves hours of writing</li>
+              <li>Scale confidently with proper architecture</li>
             </ul>
           </div>
           <div class="feature-card">
@@ -58,15 +58,15 @@ export function setupFeatures() {
             <div class="feature-icon">
               <i class="ph ph-stack-simple"></i>
             </div>
-            <h3 class="feature-title">Multi-technology support</h3>
+            <h3 class="feature-title">Use the tools you already love</h3>
             <p class="feature-description">
-              Work with the tools you love. Support for React, Vue, Node.js, Python, databases, and more.
+              No need to learn new frameworks or change your workflow. Generate code for your preferred tech stack and keep using the tools your team knows best.
             </p>
             <ul class="feature-list">
-              <li>Frontend: React, Vue, Angular, Next.js</li>
-              <li>Backend: Node.js, Express, FastAPI, Django</li>
-              <li>Databases: PostgreSQL, MongoDB, Redis</li>
-              <li>Infrastructure: Docker, Kubernetes, AWS</li>
+              <li>Zero learning curve for your existing team</li>
+              <li>Integrate with your current development workflow</li>
+              <li>Support for 20+ popular technologies</li>
+              <li>Future-proof with regular updates</li>
             </ul>
           </div>
         </div>

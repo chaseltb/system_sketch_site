@@ -11,7 +11,7 @@ export function setupHero() {
           </div>
           <h1 id="hero-title">Turn system diagrams into production code</h1>
           <p class="hero-subtitle">
-            Used by 500+ developers to eliminate 20-40% of project setup time through visual architecture design and automated code generation
+            Skip weeks of tedious setup work and start building features on day one. Join 500+ developers who've eliminated the most time-consuming part of new projects.
           </p>
           <div class="hero-cta" style="max-width: 400px; margin: 0 auto 60px;">
             <form class="waitlist-form" style="display: flex; gap: 12px;">
