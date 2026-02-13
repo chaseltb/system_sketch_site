@@ -69,24 +69,6 @@ export function setupFeatures() {
               <li>Infrastructure: Docker, Kubernetes, AWS</li>
             </ul>
           </div>
-          <div class="feature-card">
-            <div class="feature-section-icon">
-              <i class="ph ph-users"></i>
-            </div>
-            <div class="feature-icon">
-              <i class="ph ph-users-four"></i>
-            </div>
-            <h3 class="feature-title">Team collaboration made simple</h3>
-            <p class="feature-description">
-              Bridge the gap between architects, developers, and stakeholders with shared visual understanding.
-            </p>
-            <ul class="feature-list">
-              <li>Real-time collaborative editing</li>
-              <li>Version control and change tracking</li>
-              <li>Comments and feedback system</li>
-              <li>Export options for presentations</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
