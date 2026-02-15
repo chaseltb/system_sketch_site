@@ -64,24 +64,21 @@ export function setupHero() {
                 </div>
               </div>
             </div>
-            <div class="hero-video-container">
-              <div class="video-wrapper">
-                <iframe 
-                  id="youtube-video"
-                  width="560" 
-                  height="315" 
-                  src="https://www.youtube.com/embed/irJg-uTr554?si=uk4Pyw8c-eGawMnm&controls=0" 
-                  title="YouTube video player" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" 
-                  allowfullscreen>
-                </iframe>
-                <div class="custom-play-overlay" id="play-overlay">
-                  <button class="custom-play-button" id="custom-play-btn" aria-label="Play video">
-                    <i class="ph ph-play-fill"></i>
-                  </button>
-                </div>
+            <div class="video-wrapper">
+              <iframe 
+                id="youtube-video"
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/irJg-uTr554?si=uk4Pyw8c-eGawMnm&controls=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+              <div class="custom-play-overlay" id="play-overlay">
+                <button class="custom-play-button" id="custom-play-btn" aria-label="Play video">                    <i class="ph ph-play-fill"></i>
+                </button>
               </div>
             </div>
           </div>
