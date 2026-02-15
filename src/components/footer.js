@@ -1,6 +1,7 @@
 export function setupFooter() {
   const footer = document.querySelector('#footer')
-  
+  const year = new Date().getFullYear()
+
   footer.innerHTML = `
     <div class="container">
       <div class="footer-content">
@@ -30,7 +31,7 @@ export function setupFooter() {
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 SystemSketch. All rights reserved.</p>
+        <p>&copy; ${year} SystemSketch. All rights reserved. Site built by <a href="https://etherealabs.co" style="color: white; text-decoration: none; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.5); transition: border-color 0.2s;" onmouseover="this.style.borderColor='rgba(255,255,255,1)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.5)'"><strong>Etherea Labs</strong></a></p>
       </div>
     </div>
   `

@@ -7,11 +7,11 @@ export function setupHero() {
         <div class="hero-content">
           <div class="hero-badge">
             <i class="ph ph-sparkle"></i>
-            Transform weeks of setup into minutes of design
+            Stop wasting weeks on setup
           </div>
-          <h1 id="hero-title">Turn system diagrams into production code</h1>
+          <h1 id="hero-title">Ship production-ready systems in hours, not weeks</h1>
           <p class="hero-subtitle">
-            Skip weeks of tedious setup work and start building features on day one. Join 500+ developers who've eliminated the most time-consuming part of new projects.
+            Your best developers are spending their time on boilerplate instead of solving real problems. SystemSketch generates your entire backend, frontend, and infrastructure so your team can focus on building features that matter.
           </p>
           <div class="hero-cta" style="max-width: 400px; margin: 0 auto 60px;">
             <form class="waitlist-form" style="display: flex; gap: 12px;">

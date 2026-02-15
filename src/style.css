@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primary: #0066ff;
-  --primary-dark: #0052cc;
-  --secondary: #6366f1;
-  --accent: #10b981;
+  --primary: #1f2937;
+  --primary-dark: #111827;
+  --secondary: #3b82f6;
+  --accent: #06b6d4;
   --text-primary: #0f172a;
   --text-secondary: #64748b;
   --text-muted: #94a3b8;
@@ -21,16 +21,17 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --gradient-primary: linear-gradient(135deg, #0066ff 0%, #6366f1 100%);
-  --gradient-secondary: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --gradient-primary: linear-gradient(135deg, #1f2937 0%, #3b82f6 100%);
+  --gradient-secondary: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
   background: var(--bg-primary);
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  letter-spacing: -0.3px;
 }
 
 .container {
@@ -862,7 +863,7 @@ nav {
 /* CTA Section */
 .cta {
   padding: 100px 0;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
   background-size: 400% 400%;
   color: white;
   text-align: center;

@@ -7,47 +7,47 @@ export function setupTestimonials() {
         <div class="section-header">
           <div class="section-badge">
             <i class="ph ph-chat-circle-dots"></i>
-            Success stories
+            Real results
           </div>
-          <h2 id="testimonials-title" class="section-title">Developers love SystemSketch</h2>
+          <h2 id="testimonials-title" class="section-title">Teams that ship faster win</h2>
           <p class="section-subtitle">
-            See how teams are saving weeks of setup time and shipping faster with visual system design.
+            See how agencies, startups, and educational programs are using SystemSketch to compress timelines and ship with confidence.
           </p>
         </div>
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <p class="testimonial-quote">
-              "We used to spend 2-3 weeks on project setup before writing a single feature. Now we're deploying working prototypes in hours. Our clients are amazed at how fast we deliver."
+              "We were losing deals because our proposals couldn't compete. Now we show clients interactive architecture diagrams before we even write a proposal. It's closed three enterprise contracts this quarter alone."
             </p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">SM</div>
               <div class="testimonial-info">
                 <h4>Sarah Martinez</h4>
-                <p>Tech Lead, Digital Agency</p>
+                <p>Founder, Digital Agency</p>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <p class="testimonial-quote">
-              "Finally, a way to show clients exactly what we're building before we build it. No more miscommunication, no more scope creep. Projects stay on budget and on time."
+              "We went from 6-month timelines to 3-month deployments. Every week we save on setup is a week we can spend on the features that actually differentiate us. It's changed our entire business model."
             </p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">JC</div>
               <div class="testimonial-info">
                 <h4>James Chen</h4>
-                <p>Solutions Architect, Enterprise</p>
+                <p>CTO, SaaS Startup</p>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <p class="testimonial-quote">
-              "My students went from struggling with system design concepts to building real applications in weeks instead of months. They're getting job offers before graduation."
+              "Our bootcamp graduates now ship portfolio projects that look like they came from production systems. They get hired faster, and we've cut 4 weeks off the curriculum without sacrificing depth."
             </p>
             <div class="testimonial-author">
               <div class="testimonial-avatar">AL</div>
               <div class="testimonial-info">
                 <h4>Dr. Amanda Liu</h4>
-                <p>Computer Science Professor</p>
+                <p>CS Department Chair</p>
               </div>
             </div>
           </div>

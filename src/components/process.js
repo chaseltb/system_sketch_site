@@ -9,9 +9,9 @@ export function setupProcess() {
             <i class="ph ph-path"></i>
             How it works
           </div>
-          <h2 id="process-title" class="section-title">From idea to deployed app in under an hour</h2>
+          <h2 id="process-title" class="section-title">From sketch to deployed in your first sprint</h2>
           <p class="section-subtitle">
-            What used to take weeks now takes minutes. Here's how you'll go from concept to working application faster than ever before.
+            Three simple steps. Your team goes from idea to production infrastructure while you're still in planning meetings. That's the SystemSketch difference.
           </p>
         </div>
         <div class="process-flow">
@@ -20,43 +20,43 @@ export function setupProcess() {
               <i class="ph ph-pencil-simple"></i>
             </div>
             <div class="process-content">
-              <h3 class="process-title">Sketch your idea in 5 minutes</h3>
+              <h3 class="process-title">Visualize your architecture</h3>
               <p class="process-description">
-                Stop overthinking and start building. Drag and drop components to create your system architecture. No technical drawings or complex documentation needed.
+                Sketch your system with a few clicks. Show stakeholders exactly what you're building. Get alignment on design before you write a single line of code.
               </p>
             </div>
             <div class="process-number">01</div>
           </div>
-          
+
           <div class="process-arrow">
             <i class="ph ph-arrow-right"></i>
           </div>
-          
+
           <div class="process-card">
             <div class="process-icon">
               <i class="ph ph-gear"></i>
             </div>
             <div class="process-content">
-              <h3 class="process-title">Customize to your needs</h3>
+              <h3 class="process-title">Choose your tech stack</h3>
               <p class="process-description">
-                Choose your preferred technologies and deployment options. See exactly what you'll get before generating any code. No surprises, no vendor lock-in.
+                Pick the frameworks and tools you know. SystemSketch generates code that works perfectly with your workflow, not against it.
               </p>
             </div>
             <div class="process-number">02</div>
           </div>
-          
+
           <div class="process-arrow">
             <i class="ph ph-arrow-right"></i>
           </div>
-          
+
           <div class="process-card">
             <div class="process-icon">
               <i class="ph ph-gauge"></i>
             </div>
             <div class="process-content">
-              <h3 class="process-title">Launch immediately</h3>
+              <h3 class="process-title">Ship production code</h3>
               <p class="process-description">
-                Get your complete, working application in seconds. Deploy with one click or download to continue locally. Start adding business logic on day one.
+                Get fully functional, documented infrastructure. Deploy immediately or customize locally. Your team starts building features today, not next month.
               </p>
             </div>
             <div class="process-number">03</div>
