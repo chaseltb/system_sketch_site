@@ -11,7 +11,7 @@ export function setupHero() {
           </div>
           <h1 id="hero-title">Ship production-ready systems in hours, not weeks</h1>
           <p class="hero-subtitle">
-            Your best developers are spending their time on boilerplate instead of solving real problems. SystemSketch generates your entire backend, frontend, and infrastructure so your team can focus on building features that matter.
+            Stop wasting developer time on boilerplate. Generate production-ready infrastructure and ship features that matter.
           </p>
           <div class="hero-cta" style="max-width: 400px; margin: 0 auto 60px;">
             <form class="waitlist-form" style="display: flex; gap: 12px;">

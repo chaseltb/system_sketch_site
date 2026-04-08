@@ -8,6 +8,7 @@ import { setupTestimonials } from './components/testimonials.js'
 import { setupFAQ } from './components/faq.js'
 import { setupCTA } from './components/cta.js'
 import { setupFooter } from './components/footer.js'
+import { setupAnimations, animateHeroElements } from './animations.js'
 
 // Initialize all components
 setupNavigation()
@@ -19,3 +20,9 @@ setupTestimonials()
 setupFAQ()
 setupCTA()
 setupFooter()
+
+// Setup animations
+setTimeout(() => {
+  setupAnimations()
+  animateHeroElements()
+}, 100)
