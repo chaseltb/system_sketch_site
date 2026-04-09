@@ -6,6 +6,7 @@ import { setupFeatures } from './components/features.js'
 import { setupProcess } from './components/process.js'
 import { setupTestimonials } from './components/testimonials.js'
 import { setupFAQ } from './components/faq.js'
+import { setupPricing } from './components/pricing.js'
 import { setupCTA } from './components/cta.js'
 import { setupFooter } from './components/footer.js'
 import { setupAnimations, animateHeroElements } from './animations.js'
@@ -18,6 +19,7 @@ setupFeatures()
 setupProcess()
 setupTestimonials()
 setupFAQ()
+setupPricing()
 setupCTA()
 setupFooter()
 

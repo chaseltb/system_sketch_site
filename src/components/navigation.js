@@ -26,12 +26,13 @@ export function setupNavigation() {
           <li><a href="#features">Features</a></li>
           <li><a href="#process">How it works</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
         <div class="nav-cta">
-          <a href="#cta" class="btn btn-primary">
-            <i class="ph ph-rocket-launch"></i>
-            Join the waitlist
+          <a href="#pricing" class="btn btn-primary" style="box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);">
+            <i class="ph ph-tag"></i>
+            View pricing
           </a>
         </div>
       </div>
